@@ -1,4 +1,4 @@
-# Technical Documentation – Assignment 3 Portfolio Website
+# Technical Documentation – Assignment 4 Portfolio Website
 
 
 ## 🧩 Project Overview
@@ -9,7 +9,7 @@ This interactive portfolio website serves as a personal showcase of skills, proj
 
 ## 📁 File Structure
 ```
-assignment-3/
+assignment-4/
 ├── index.html                          # Main HTML file
 ├── css/
 │   └── styles.css                      # Stylesheet
