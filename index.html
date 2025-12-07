@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Performance optimizations -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#667eea">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Arwa Aldawoud - Computer Science student at KFUPM passionate about AI, machine learning, and web development.">
+    <meta name="keywords" content="Arwa Aldawoud, Computer Science, KFUPM, Portfolio, AI, Machine Learning, Web Development">
+    <meta name="author" content="Arwa Aldawoud">
+    
+    <title>Arwa Aldawoud - Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="assets/images/favicon.webp">
+    
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://api.github.com" crossorigin>
+    <link rel="dns-prefetch" href="https://api.github.com">
+    
+    <!-- Font Awesome for icons - preconnect for faster loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- Google Fonts - Lato with font-display swap for performance -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap' rel='stylesheet' type='text/css'>
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="css/styles.css" as="style">
+    
+    <!-- Link to external CSS stylesheet - render blocking for critical styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="global-blob-wrapper">
+        <div class="blob-bg" data-blob-count="5" data-colors='["#667eea", "#764ba2"]'></div>
+    </div>
+    <!-- Header section with name, theme switch, and navigation -->
+    <header>
+        <div class="header-top">
+            <div class="header-left">
+                <div class="brand-nav-row">
+                    <h1>Arwa Aldawoud</h1>
+                    <nav class="primary-nav" aria-label="Main navigation">
+                        <ul>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#achievements">Experiences</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+            </div>
+            
+            <div class="header-right">
+                <!-- Theme Switch (Light/Dark mode toggle) -->
+                <div class="theme-switch">
+                    <input type="checkbox" id="themeToggle">
+                    <label for="themeToggle" class="switch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="greeting-banner">
+        <div class="greeting-content">
+            <p id="greeting"></p>
+            <div class="greeting-meta">
+                <!-- Visitor Name Input -->
+                <div class="visitor-name-input">
+                    <input type="text" id="visitorNameInput" placeholder="Enter your name..." maxlength="30">
+                    <button type="button" id="saveNameBtn" class="save-name-btn">💾 Save Name</button>
+                </div>
+            </div>
+        </div>
+        <div class="visitor-timer">
+            <span class="timer-icon">⏱️</span>
+            <span id="visitorTimer">You've been here for 0 minutes</span>
+        </div>
+    </div>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <!-- Profile image -->
+                    <img src="assets/images/profile.webp" alt="Arwa Aldawoud" class="profile-img" loading="lazy" width="250" height="250">
+                <!-- About text -->
+                <div class="about-text">
+                    <p class="tagline">Dedicated junior Computer Science student passionate about AI & machine learning and web development</p>
+                    <p>Seeking opportunities to gain hands-on experience and contribute to innovative tech projects. Strong problem-solving skills with a proactive learning approach.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-content">
+                <div class="education-card">
+                    <!-- Education icon (emoji) -->
+                    <div class="education-icon">🎓</div>
+                    <div class="education-info">
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p class="institution">KFUPM, Dhahran, Saudi Arabia</p>
+                        <p class="graduation">Anticipated Graduation: May 2027</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-carousel-wrapper">
+                <div class="carousel">
+                    <ul class="carousel__list">
+                        <li class="carousel__item" data-pos="-2">
+                            <div class="skill-card-content">
+                                <div class="skill-icon"><img src="assets/images/python.png" alt="Python" loading="lazy"></div>
+                                <h3>Python</h3>
+                            </div>
+                        </li>
+                        <li class="carousel__item" data-pos="-1">
+                            <div class="skill-card-content">
+                                <div class="skill-icon"><img src="assets/images/java.png" alt="Java" loading="lazy"></div>
+                                <h3>Java</h3>
+                            </div>
+                        </li>
+                        <li class="carousel__item" data-pos="0">
+                            <div class="skill-card-content">
+                                <div class="skill-icon"><img src="assets/images/html.png" alt="HTML" loading="lazy"></div>
+                                <h3>HTML</h3>
+                            </div>
+                        </li>
+                        <li class="carousel__item" data-pos="1">
+                            <div class="skill-card-content">
+                                <div class="skill-icon"><img src="assets/images/css.png" alt="CSS" loading="lazy"></div>
+                                <h3>CSS</h3>
+                            </div>
+                        </li>
+                        <li class="carousel__item" data-pos="2">
+                            <div class="skill-card-content">
+                                <div class="skill-icon"><img src="assets/images/js.png" alt="JavaScript" loading="lazy"></div>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </li>
+                        <li class="carousel__item" data-pos="3">
+                            <div class="skill-card-content">
+                                <div class="skill-icon"><img src="assets/images/microsoft.png" alt="Microsoft Office" loading="lazy"></div>
+                                <h3>Microsoft Office</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="projects-header">
+                <h2>Projects</h2>
+                <button type="button" id="toggleProjectsBtn" class="toggle-projects-btn">🙈 Hide Projects</button>
+            </div>
+            <div id="projectsContent" class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card-container">
+                    <div class="project-card-3d">
+                        <div class="project-card-contents project-card-front">
+                            <div class="project-card-depth">
+                                <h2>ICS108 Project</h2>
+                                <hr>
+                                <p>Social Media Application</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">OOP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-contents project-card-back">
+                            <div class="project-card-depth">
+                                <hr>
+                                <p>This project involved developing a comprehensive social media application featuring core functionalities essential to modern social networking platforms. The application includes user profile creation and customization, friend connection and network building capabilities, and an interactive feed system.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card-container">
+                    <div class="project-card-3d">
+                        <div class="project-card-contents project-card-front">
+                            <div class="project-card-depth">
+                                <h2>SWE206 Project</h2>
+                                <hr>
+                                <p>Reservation Management System</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Software Engineering</span>
+                                    <span class="tech-tag">Design Patterns</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-contents project-card-back">
+                            <div class="project-card-depth">
+                                <hr>
+                                <p>This project involved developing a comprehensive reservation management system for KFUPM facilities. The system was designed to serve multiple user categories, including students, faculty and staff members, as well as student club presidents.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card-container">
+                    <div class="project-card-3d">
+                        <div class="project-card-contents project-card-front">
+                            <div class="project-card-depth">
+                                <h2>ISE291 Project</h2>
+                                <hr>
+                                <p>Data Science Pipeline</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Systems Engineering</span>
+                                    <span class="tech-tag">Optimization</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-contents project-card-back">
+                            <div class="project-card-depth">
+                                <hr>
+                                <p>This project provided hands-on experience with the complete data science pipeline, encompassing critical stages from initial data preprocessing and cleaning through to model selection and optimization.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements">
+            <h2>Experience</h2>
+            <div class="cols">
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front">
+                            <div class="inner">
+                                <img src="assets/images/flutter.png" alt="Flutter" class="experience-icon" loading="lazy">
+                                <p>Flutter Weekend Hackathon</p>
+                                <span>Dec 2023</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>3rd place winner, Google Developer Student Club, KFUPM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front">
+                            <div class="inner">
+                                <img src="assets/images/techhub.png" alt="TECHHUB" class="experience-icon" loading="lazy">
+                                <p>AI & ML Bootcamp</p>
+                                <span>Apr 2024</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>TECHHUB - 15 hours intensive training</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front">
+                            <div class="inner">
+                                <img src="assets/images/alfozan.png" alt="AlFozan" class="experience-icon" loading="lazy">
+                                <p>Community Work Principles</p>
+                                <span>Sep 2024</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>AlFozan Academy - Raed Basic Program</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front">
+                            <div class="inner">
+                                <img src="assets/images/kaust.png" alt="KAUST" class="experience-icon" loading="lazy">
+                                <p>Introduction to AI Program</p>
+                                <span>Jan 2025</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Successfully completed comprehensive AI fundamentals course, KAUST Academy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front">
+                            <div class="inner">
+                                <img src="assets/images/kaust.png" alt="KAUST" class="experience-icon" loading="lazy">
+                                <p>Advanced AI Program</p>
+                                <span>Feb 2025</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Successfully completed advanced artificial intelligence specialization, KAUST Academy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front">
+                            <div class="inner">
+                                <img src="assets/images/mediaclub.png" alt="Media Club" class="experience-icon" loading="lazy">
+                                <p>Photography</p>
+                                <span>Jan 2024 - May 2025</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Active member of KFUPM Female Media Club capturing campus events and activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front">
+                            <div class="inner">
+                                <img src="assets/images/kikx.png" alt="KIKX" class="experience-icon" loading="lazy">
+                                <p>Volunteer Work</p>
+                                <span>Jul 2023 - Dec 2024</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Regular volunteer at KFUPM Institute for Knowledge Exchange and KFUPM graduation events.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front">
+                            <div class="inner">
+                                <img src="assets/images/computerclub.png" alt="Computer Club" class="experience-icon" loading="lazy">
+                                <p>Event Management</p>
+                                <span>Aug 2024 - May 2025</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Successfully managed and coordinated multiple events for the Female Computer Club at KFUPM.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front">
+                            <div class="inner">
+                                <img src="assets/images/kfupm.svg.png" alt="KFUPM" class="experience-icon" loading="lazy">
+                                <p>United Kingdom Visit</p>
+                                <span>Oct 2025</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Selected for international academic delegation to the UK, visiting leading universities and engaging in cultural exchange activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front">
+                            <div class="inner">
+                                <img src="assets/images/mentorship.png" alt="Mentorship" class="experience-icon" loading="lazy">
+                                <p>Mentee - KFUPM Mentorship Program</p>
+                                <span>Sep 2024 - Dec 2024</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Mentee in KFUPM's Mentorship Program, gaining industry insights and career guidance from accomplished alumni.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <!-- Contact Info Cards -->
+                <div class="contact-info">
+                    <div class="card">
+                        <img src="assets/images/gmail.png" alt="Email" class="icon" loading="lazy" width="80" height="80">
+                        <div class="card-content">
+                            <h3>Email</h3>
+                            <span>arwayaser26@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/linkedin.png" alt="LinkedIn" class="icon" loading="lazy" width="80" height="80">
+                        <div class="card-content">
+                            <h3>LinkedIn</h3>
+                            <span><a href="https://www.linkedin.com/in/arwa-aldawoud-9755962a6/" target="_blank" rel="noopener noreferrer">arwa-aldawoud</a></span>
+                        </div>
+                    </div>
+                    <div class="card" id="githubContactCard">
+                        <img src="assets/images/github.png" alt="GitHub" class="icon" loading="lazy" width="80" height="80">
+                        <div class="card-content">
+                            <h3>GITHUB</h3>
+                            <span id="githubContactInfo">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Send Message Button -->
+                <div class="send-message-btn-container">
+                    <button type="button" id="sendMessageBtn" class="send-message-btn">Send a Message</button>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form" id="contactForm" style="display: none;">
+                    <h3>Send a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    <button type="button" id="hideMessageBtn" class="hide-message-btn">Hide Form</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&copy; 2025 Arwa Aldawoud. All rights reserved.</p>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <!-- Defer script loading to improve page load performance -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
