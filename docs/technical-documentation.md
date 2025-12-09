@@ -10,17 +10,20 @@ This interactive portfolio website serves as a personal showcase of skills, proj
 ## 📁 File Structure
 ```
 assignment-4/
-├── index.html                          # Main HTML file
+├── index.html                      # Main HTML file
 ├── css/
-│   └── styles.css                      # Stylesheet
+│   └── styles.css                  # Stylesheet
 ├── js/
-│   └── script.js                       # JavaScript for interactivity
+│   └── script.js                   # JavaScript functionality
 ├── assets/
-│   └── images/                         # Image assets (favicon, profile, logos, skill icons)
+│   └── images/                     # Image assets (favicon, profile, logos, skill icons)
 ├── docs/
-│   ├── ai-usage-report.md             # Details AI tools, benefits, challenges, and learning outcomes
-│   └── technical-documentation.md      # Technical details, structure, and implementation overview
-└── README.md                           # Project description and overview
+│   ├── ai-usage-report.md         # Detailed AI usage documentation
+├── presentation/
+│   ├── slides.pdf                  # Presentation slides
+│   └── demo-video.mp4              # Demo video
+├── .gitignore                      # Git ignore file
+└── README.md                       # Project documentation
 ```
 
 

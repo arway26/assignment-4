@@ -39,7 +39,10 @@ assignment-4/
 │   └── images/                     # Image assets (favicon, profile, logos, skill icons)
 ├── docs/
 │   ├── ai-usage-report.md         # Detailed AI usage documentation
-│   └── technical-documentation.md  # Detailed technical documentation
+├── presentation/
+│   ├── slides.pdf                  # Presentation slides
+│   └── demo-video.mp4              # Demo video
+├── .gitignore                      # Git ignore file
 └── README.md                       # Project documentation
 ```
 
@@ -88,9 +91,11 @@ python -m http.server
 
 Then open: `http://localhost:8000`
 
-## 📹 Demo Video
+## 📊 Presentation Materials
 
-A full demonstration video is available in the `presentation/demo-video.mp4` file, showcasing all features and functionality.
+**Slides:** Available in `presentation/slides.pdf` - 11 professional slides covering project overview, features, architecture, AI usage, challenges, and future improvements.
+
+**Demo Video:** Available in `presentation/demo-video.mp4` - 3-4 minute demonstration of all interactive features and functionality.
 
 ## 🤖 AI Usage Summary
 
