@@ -88,6 +88,10 @@ python -m http.server
 
 Then open: `http://localhost:8000`
 
+## 📹 Demo Video
+
+A full demonstration video is available in the `presentation/demo-video.mp4` file, showcasing all features and functionality.
+
 ## 🤖 AI Usage Summary
 
 This project was developed with assistance from AI tools to enhance productivity and learning outcomes. AI was used for:
