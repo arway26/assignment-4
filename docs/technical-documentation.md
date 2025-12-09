@@ -19,6 +19,7 @@ assignment-4/
 │   └── images/                     # Image assets (favicon, profile, logos, skill icons)
 ├── docs/
 │   ├── ai-usage-report.md         # Detailed AI usage documentation
+│   └── technical-documentation.md  # Technical documentation
 ├── presentation/
 │   ├── slides.pdf                  # Presentation slides
 │   └── demo-video.mp4              # Demo video
